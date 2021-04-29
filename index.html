@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- script by saepulhidayat 29/04/2021 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>SANSS Adventure With PROFA ( Programmer Fasilkom )</title>
+
+    <!-- https://unsplash.com/s/photos/tent -->
+
+    <style>
+      /* Carousel base class */
+      .carousel {
+        margin-bottom: 4rem;
+      }
+      /* Since positioning the image, we need to help out the caption */
+      .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+      }
+
+      /* Declare heights because of positioning of img element */
+      .carousel-item {
+        /*height: 32rem;*/
+        height: 38rem;
+      }
+      .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+      }
+
+      section{
+        padding-top: 5rem;
+      }
+
+      #list{
+        background-color: #5000ca;
+      }
+
+      label{
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="" id="home">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">SANSS ADVENTURE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list">List Sewa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Order</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+   
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/11.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/22.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/33.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <section id="about" >
+      <div class="container" style="background-color: #ffffff" >
+        <div class="row mb-5">
+          <div class="col-md-5 text-center mb-5">
+            <img width="300px" data-aos="fade-down" data-aos-duration="1000" class="img-thumbnail rounded-circle shadow" src="image/logo2.jpg" alt="">
+          </div>
+
+          <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="text-danger">SANSS ADVENTURE</h2>
+            <p class="fs-4">Penyewaan Alat Pertualangan Berdiri Sejak <span class="text-danger fw-bold">2014</span>. Kami Sangat Berpengalaman Dalam Hal Sewa Menyewa, Kami Menawarkan Dengan Kualitas Terbaik. </p>
+            <a href="https://wa.me/682111161645" target="blank"><i class="fs-1 me-2 bi bi-whatsapp"></i></a>
+            <a href="https://instagram.com/sewaalatgunungsubang" target="blank"><i class="fs-1 me-2 bi bi-instagram"></i></a>
+            <a href="https://g.page/sanss-adventure?share" target="blank"><i class="fs-1 me-2 bi bi-geo-alt-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="shadow" fill="#5000ca" fill-opacity="1" d="M0,32L24,69.3C48,107,96,181,144,197.3C192,213,240,171,288,170.7C336,171,384,213,432,240C480,267,528,277,576,234.7C624,192,672,96,720,74.7C768,53,816,107,864,133.3C912,160,960,160,1008,170.7C1056,181,1104,203,1152,202.7C1200,203,1248,181,1296,149.3C1344,117,1392,75,1416,53.3L1440,32L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg> -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5000ca" fill-opacity="1" d="M0,32L24,69.3C48,107,96,181,144,197.3C192,213,240,171,288,170.7C336,171,384,213,432,240C480,267,528,277,576,234.7C624,192,672,96,720,74.7C768,53,816,107,864,133.3C912,160,960,160,1008,170.7C1056,181,1104,203,1152,202.7C1200,203,1248,181,1296,149.3C1344,117,1392,75,1416,53.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    </section>
+
+    
+    <section id="list">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-12 text-center text-white fw-bold">
+            <h1>List Sewa</h1>
+            <center>
+              <hr class="w-25">
+            </center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-2" data-aos="flip-right" data-aos-duration="1000" >
+            <h3 class="text-center text-white">TENDA</h3>
+            <table class="table text-white">
+              <thead>
+                <tr>
+                  <th>Alat</th>
+                  <th>Harga</th>
+                </tr>
+              </thead>
+              <tbody id="tenda">
+                <!-- isi ajah sendiri datanya ^_^ -->
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="col-md-4 mb-2" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+            <h3 class="text-center text-white">INDIVINDU</h3>
+            <table class="table text-white">
+              <thead>
+                <tr>
+                  <th>Alat</th>
+                  <th>Harga</th>
+                </tr>
+              </thead>
+              <tbody id="individu">
+                <!-- isi ajah sendiri datanya ^_^ -->
+              </tbody>
+            </table>
+
+          </div>
+
+
+          <div class="col-md-4 mb-2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+            <h3 class="text-center text-white">KELOMPOK</h3>
+            <table class="table text-white">
+              <thead>
+                <tr>
+                  <th>Alat</th>
+                  <th>Harga</th>
+                </tr>
+              </thead>
+              <tbody id="kelompok">
+                <!-- isi ajah sendiri datanya ^_^ -->
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L24,69.3C48,107,96,181,144,197.3C192,213,240,171,288,170.7C336,171,384,213,432,240C480,267,528,277,576,234.7C624,192,672,96,720,74.7C768,53,816,107,864,133.3C912,160,960,160,1008,170.7C1056,181,1104,203,1152,202.7C1200,203,1248,181,1296,149.3C1344,117,1392,75,1416,53.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    </section>
+
+    <section id="order">
+
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-12 text-center text-danger fw-bold">
+            <h1>Order</h1>
+            <center>
+              <hr class="bg-dark w-25">
+            </center>
+          </div>
+        </div>
+        <div class="row">
+
+
+          <div class="col-md-6 mb-2">
+            <div class="card border border-danger shadow" data-aos="zoom-in" data-aos-duration="500">
+              <div class="card-body">
+                <p class="fs-3 text-danger">
+                  Silahkan Bisa Order Pemesanan Lewat Fomulir Ini, Atau Bisa Hubungi Langsung Ke <a href="https://wa.me/682111161645" target="blank">082111161645</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="card bg-success shadow" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="200" >
+              <div class="card-body">
+                <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                  <strong>Terima Kasih!</strong> Pesan anda telah kami terima.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <form name="form-order-sanss" action="" method="post">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap</label>
+                    <input type="text" autocomplete="off" class="form-control" name="nama" id="nama">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="no_wa" class="form-label">No Whatsapp</label>
+                    <input type="number" autocomplete="off" class="form-control" name="no_hp" id="no_hp">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="type" class="form-label">Jenis Alat</label>
+                    <select name="type" id="type" class="form-control">
+                      <option>tenda</option>
+                      <option>individu</option>
+                      <option>kelompok</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="alat" class="form-label">Alat</label>
+                    <select name="alat" id="alat" class="form-control">
+                      
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="jumlah" class="form-label">Jumlah Alat</label>
+                    <input type="number" name="jumlah" autocomplete="off" class="form-control" id="jumlah">
+                  </div>
+
+                  <button type="submit" id="submit" class="btn btn-danger btn-kirim">Submit</button>
+
+                  <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,256L6.2,234.7C12.3,213,25,171,37,149.3C49.2,128,62,128,74,112C86.2,96,98,64,111,85.3C123.1,107,135,181,148,181.3C160,181,172,107,185,101.3C196.9,96,209,160,222,165.3C233.8,171,246,117,258,101.3C270.8,85,283,107,295,117.3C307.7,128,320,128,332,128C344.6,128,357,128,369,128C381.5,128,394,128,406,122.7C418.5,117,431,107,443,101.3C455.4,96,468,96,480,101.3C492.3,107,505,117,517,133.3C529.2,149,542,171,554,186.7C566.2,203,578,213,591,197.3C603.1,181,615,139,628,149.3C640,160,652,224,665,234.7C676.9,245,689,203,702,165.3C713.8,128,726,96,738,106.7C750.8,117,763,171,775,208C787.7,245,800,267,812,272C824.6,277,837,267,849,266.7C861.5,267,874,277,886,282.7C898.5,288,911,288,923,277.3C935.4,267,948,245,960,234.7C972.3,224,985,224,997,186.7C1009.2,149,1022,75,1034,74.7C1046.2,75,1058,149,1071,181.3C1083.1,213,1095,203,1108,186.7C1120,171,1132,149,1145,160C1156.9,171,1169,213,1182,202.7C1193.8,192,1206,128,1218,122.7C1230.8,117,1243,171,1255,186.7C1267.7,203,1280,181,1292,176C1304.6,171,1317,181,1329,208C1341.5,235,1354,277,1366,266.7C1378.5,256,1391,192,1403,170.7C1415.4,149,1428,171,1434,181.3L1440,192L1440,320L1433.8,320C1427.7,320,1415,320,1403,320C1390.8,320,1378,320,1366,320C1353.8,320,1342,320,1329,320C1316.9,320,1305,320,1292,320C1280,320,1268,320,1255,320C1243.1,320,1231,320,1218,320C1206.2,320,1194,320,1182,320C1169.2,320,1157,320,1145,320C1132.3,320,1120,320,1108,320C1095.4,320,1083,320,1071,320C1058.5,320,1046,320,1034,320C1021.5,320,1009,320,997,320C984.6,320,972,320,960,320C947.7,320,935,320,923,320C910.8,320,898,320,886,320C873.8,320,862,320,849,320C836.9,320,825,320,812,320C800,320,788,320,775,320C763.1,320,751,320,738,320C726.2,320,714,320,702,320C689.2,320,677,320,665,320C652.3,320,640,320,628,320C615.4,320,603,320,591,320C578.5,320,566,320,554,320C541.5,320,529,320,517,320C504.6,320,492,320,480,320C467.7,320,455,320,443,320C430.8,320,418,320,406,320C393.8,320,382,320,369,320C356.9,320,345,320,332,320C320,320,308,320,295,320C283.1,320,271,320,258,320C246.2,320,234,320,222,320C209.2,320,197,320,185,320C172.3,320,160,320,148,320C135.4,320,123,320,111,320C98.5,320,86,320,74,320C61.5,320,49,320,37,320C24.6,320,12,320,6,320L0,320Z"></path></svg>
+    </section>
+
+
+    <footer class="bg-primary text-white text-center pb-5">
+      <p>Created <i class="bi bi-heart-fill text-danger"></i> by <a class="text-white fw-bold" href="https://instagram.com/saepulfariz" target="blank">Saepul Hidayat</a> <br>
+       With PROFA ( Programmer Fasilkom )</p>
+    </footer>
+
+    <div class="position-relative">
+      <div class="position-absolute bottom-25 end-25" style="right: 30px; bottom: 30px;">
+        <a href="#top" class="btn btn-sm btn-danger"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+        
+
+    <!-- Modal -->
+    <div class="modal fade" id="welcome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="welcomeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="welcomeLabel">Selamat Datang</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img width="300px" src="image/brosur.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // buat satu kali tampil ajah
+      AOS.init({
+        once: true
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script>
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: "bounce" });
+      // ease: "slow(0.7, 0.7, false)"
+      gsap.from('.carousel', { duration: 2.5, y: '-100%', opacity: 0, rotateY: 360 });
+    </script>
+
+
+    <script>
+      var myModal = new bootstrap.Modal(document.getElementById('welcome'), {
+        keyboard: false
+      })
+
+      // myModal.show();
+
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.responseType = 'json';
+      // buat ubah ke result json
+
+      // Setup our listener to process completed requests
+      xhr.onload = function () {
+
+        // Process our return data
+        if (xhr.status >= 200 && xhr.status < 300) {
+          // What do when the request is successful
+
+          // console.log('success!', xhr.response);
+
+
+          var data = xhr.response;
+          // console.log(data['tenda']);
+
+
+          var tenda = '';
+
+          var select = '';
+
+          for (var i = 0; i < data['tenda'].length; i++) {
+            tenda = tenda + `<tr>
+              <td>`+data['tenda'][i]['alat']+`</td>
+              <td>`+data['tenda'][i]['harga']+`</td>
+            </tr>
+            `;
+
+            select = select + `<option>`+ data['tenda'][i]['alat'] + ` | ` + data['tenda'][i]['harga'] +`</option>`;
+          }
+
+          document.getElementById('tenda').innerHTML = tenda;
+
+          document.getElementById('alat').innerHTML = select;
+
+
+
+          var individu = '';
+
+          
+
+          for (var i = 0; i < data['individu'].length; i++) {
+            individu = individu + `<tr>
+              <td>`+data['individu'][i]['alat']+`</td>
+              <td>`+data['individu'][i]['harga']+`</td>
+            </tr>
+            `;
+
+            
+          }
+
+          document.getElementById('individu').innerHTML = individu;
+          
+
+          var kelompok = '';
+
+          for (var i = 0; i < data['kelompok'].length; i++) {
+            kelompok = kelompok + `<tr>
+              <td>`+data['kelompok'][i]['alat']+`</td>
+              <td>`+data['kelompok'][i]['harga']+`</td>
+            </tr>
+            `;
+          }
+
+          document.getElementById('kelompok').innerHTML = kelompok;
+
+        } else {
+          // What do when the request fails
+          console.log('The request failed!');
+        }
+
+        // Code that should run regardless of the request status
+        // console.log('This always runs...');
+      };
+
+      // Create and send a GET request
+      // The first argument is the post type (GET, POST, PUT, DELETE, etc.)
+      // The second argument is the endpoint URL
+      // https://jsonplaceholder.typicode.com/posts
+      xhr.open('GET', 'json.json');
+      xhr.send();
+
+
+      var type = document.getElementById('type');
+
+      // https://www.w3schools.com/jsref/event_onchange.asp#:~:text=The%20onchange%20event%20occurs%20when,similar%20to%20the%20oninput%20event.&text=The%20other%20difference%20is%20that,works%20on%20elements.
+      type.addEventListener('change', function(){
+        // console.log(this.value);
+
+        var test = this.value;
+
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.responseType = 'json';
+        // buat ubah ke result json
+
+        // Setup our listener to process completed requests
+        xhr.onload = function () {
+
+          // Process our return data
+          if (xhr.status >= 200 && xhr.status < 300) {
+            // What do when the request is successful
+
+            // console.log('success!', xhr.response);
+
+
+            var data = xhr.response;
+            // console.log(data[test]);
+
+
+            var select = '';
+
+            for (var i = 0; i < data[test].length; i++) {
+           
+
+              select = select + `<option>`+ data[test][i]['alat'] + ` | ` + data[test][i]['harga'] +`</option>`;
+            }
+
+            // console.log(select);
+
+            
+            document.getElementById('alat').innerHTML = select;
+
+          
+
+          } else {
+            // What do when the request fails
+            console.log('The request failed!');
+          }
+
+          // Code that should run regardless of the request status
+          // console.log('This always runs...');
+        };
+
+        // Create and send a GET request
+        // The first argument is the post type (GET, POST, PUT, DELETE, etc.)
+        // The second argument is the endpoint URL
+        // https://jsonplaceholder.typicode.com/posts
+        xhr.open('GET', 'json.json');
+        xhr.send();
+
+      })
+
+
+
+      // Penerapan berhasil diperbarui.
+      // Versi 1 pada 29 Apr, pukul 13.41
+      // ID Penerapan
+      // AKfycbzcgev9XxeBWI0hUs34i82fYwZsLkupJdaxHb5pdc6nW9Pk8Wllx_GwZNlPNPR8-3uZ5g
+      // Aplikasi web
+      // URL
+      // https://script.google.com/macros/s/AKfycbzcgev9XxeBWI0hUs34i82fYwZsLkupJdaxHb5pdc6nW9Pk8Wllx_GwZNlPNPR8-3uZ5g/exec
+
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzcgev9XxeBWI0hUs34i82fYwZsLkupJdaxHb5pdc6nW9Pk8Wllx_GwZNlPNPR8-3uZ5g/exec'
+      const form = document.forms['form-order-sanss'];
+
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        // kalau ada class d-none maka hilangkan, kalau gak ada maka tambahkan
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // tampilkan tombol kirim,hilangkan tombol loading
+            console.log('Success!', response);
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            myAlert.classList.toggle('d-none');
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+
+      // https://github.com/jamiewilson/form-to-google-sheets
+    </script>
+
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
